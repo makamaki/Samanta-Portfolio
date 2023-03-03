@@ -1,3 +1,3 @@
 Personal Portofolio Website
 
-https://makamaki.github.io/Samanta-Portofolio/
+https://makamaki.github.io
