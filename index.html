@@ -205,28 +205,16 @@
                 </li>                
             </ul>
         </footer>               
-        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+     
 
-<script>
-// Get the button
-let mybutton = document.getElementById("myBtn");
+<div class="progress-bar" />
+<button class="back-to-top hidden">
+  <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
+  </svg>
+</button>
+<div class="progress-bar" />
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-        </script>
     </body>
 </html>
