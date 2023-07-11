@@ -89,6 +89,24 @@ strong { font-weight: var(--fw-bold) }
     transform: scale(1.1);
 }
 
+
+.top {
+  place-self:end;
+  position:sticky;
+  bottom:20px;
+  margin-right:20px;
+  margin-top:100vh;
+  
+  /* visual styling */
+  text-decoration: none;
+  padding: 10px;
+  font-family: sans-serif;
+  color: #fff;
+  background: #000;
+  border-radius: 100px;
+  white-space:nowrap;
+}
+
 /* Typography */
 
 h1,
@@ -212,25 +230,6 @@ header {
 .nav-open .hamburger::after {
     opacity: 0;
 }
-
-
-.top {
-  place-self:end;
-  position:sticky;
-  bottom:20px;
-  margin-right:20px;
-  margin-top:100vh;
-  
-  /* visual styling */
-  text-decoration: none;
-  padding: 10px;
-  font-family: sans-serif;
-  color: #fff;
-  background: #000;
-  border-radius: 100px;
-  white-space:nowrap;
-}
-
 
 
 .hamburger {
