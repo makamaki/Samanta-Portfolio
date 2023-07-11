@@ -90,11 +90,6 @@ strong { font-weight: var(--fw-bold) }
 }
 
 
-body {
-  display: grid;
-  grid-template-columns: auto auto; 
-}
-
 .top {
   place-self:end;
   position:sticky;
@@ -109,11 +104,6 @@ body {
   background: #000;
   border-radius: 100px;
 }
-
-p {
-  font-size: 25px;
-}
-
 
 
 /* Typography */
