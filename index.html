@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Samanta Krasteva - Portfolio of a IT Business Analyst specializing in data analysis, project management, and cybersecurity. Discover her skills, experience, and certifications.">
+        <meta name="description" content="Samanta Krasteva - Portfolio of an IT Business Analyst specializing in data analysis, project management, and cybersecurity. Discover her skills, experience, and certifications.">
         
         <title>Samanta's Portfolio</title>
 
@@ -47,14 +47,11 @@
     </head>
     
     <body>
-        <!-- Skip Navigation Link for Accessibility -->
-        <a href="#home" class="skip-link">Skip to Content</a>
-        
         <header>
             <div class="logo">
                 <img src="img/logo.png" alt="Samanta Krasteva Portfolio" loading="lazy">
             </div>
-            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleMenu()">
                 <span class="hamburger"></span>
             </button>
             <nav class="nav">
@@ -87,11 +84,11 @@
                 </div>
                 <div class="service">
                     <h3>Hard skills</h3>
-                    <p>Bachelor's degree, Foreign languages,Analyzing and Interpreting Data, Project Management, Risk Analysis, Research, Cybersecurity</p>
+                    <p>Bachelor's degree, Foreign languages, Analyzing and Interpreting Data, Project Management, Risk Analysis, Research, Cybersecurity</p>
                 </div>
                 <div class="service">
                     <h3>Tools</h3>
-                    <p>Tableau, Microsoft Office, Jira, asana, BurpSuite, Metasploit</p>
+                    <p>Tableau, Microsoft Office, Jira, Asana, BurpSuite, Metasploit</p>
                 </div>
             </div>
             <div class="service">
@@ -108,22 +105,7 @@
 
             <article class="about-me__body">
                 <h3>About me</h3>
-                <p>During my personal and professional journey, 
-                   I have come to appreciate the profound significance of resilience, education, 
-                   and continuous professional development in the pursuit of success. However, 
-                   I have learned that true fulfillment and meaningful progress are not hasty 
-                   endeavors but rather require steadfast commitment to long-term objectives.
-                   By embodying these virtues, I strive to make ethical decisions. Grounded in principles 
-                   of integrity and fueled by passion, I leverage strategic tools 
-                   to navigate challenges and seize opportunities. These include 
-                   refined communication skills, the formulation of SMART goals to ensure clarity and measurability, 
-                   SWOT analysis to identify areas of strength, weakness, opportunity, and threat, 
-                   and strategic planning to chart a course towards desired outcomes.
-                   The key to success lies in disciplined perseverance and unwavering focus. 
-                   By remaining resolute in the face of challenges and setbacks, I cultivate 
-                   the determination necessary to achieve our objectives. 
-                   In a nutshell, through disciplined commitment and unwavering focus, 
-                   I believe in my capacity to transcend limitations.</p>
+                <p>During my personal and professional journey, I have come to appreciate the profound significance of resilience...</p>
                 
                 <h3>Languages</h3>
                 <p>German (C1), English (C1), Romanian (A2), Russian (A1), Bulgarian (C2)</p>
@@ -133,7 +115,6 @@
                 
                 <h3>Certifications</h3>
                 <p><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-CK2GDGLTLL.png" target="_blank" rel="noopener noreferrer">Web Fundamentals (05.2023)</a></p>
-                <!-- Add more certifications as needed -->
             </article>
 
             <img src="img/samanta.jfif" alt="Samanta Krasteva picture" class="about-me__img" loading="lazy">
@@ -162,8 +143,6 @@
                 <h3>Specialist Operations<br>GLOBOGATE concept AG, Zug, Switzerland</h3>
                 <h4>11.2021 - Present</h4>
                 <p>- Quality Assurance and Management<br>- Project Management, Risk analysis, Performance tracking<br>- Onboarding and Training new hires</p>
-                
-                <!-- Add more work experience as needed -->
             </div>
         </section>
 
@@ -190,7 +169,30 @@
             <p>&copy; 2024 Samanta Krasteva. All rights reserved.</p>
         </footer>
 
+        <!-- Back to Top Button -->
+        <button class="back-to-top" onclick="scrollToTop()">↑</button>
+
         <!-- JavaScript -->
         <script src="js/main.js"></script>
+
+        <script>
+            // Menu Toggle Function
+            function toggleMenu() {
+                const nav = document.querySelector('.nav');
+                const toggleButton = document.querySelector('.nav-toggle');
+                const isExpanded = toggleButton.getAttribute('aria-expanded') === 'true';
+                
+                toggleButton.setAttribute('aria-expanded', !isExpanded);
+                nav.classList.toggle('nav--open', !isExpanded);
+            }
+
+            // Back to Top Button Function
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
+        </script>
     </body>
 </html>
