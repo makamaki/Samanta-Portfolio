@@ -51,6 +51,7 @@
             <div class="logo">
                 <img src="img/logo.png" alt="Samanta Krasteva Portfolio" loading="lazy">
             </div>
+            <!-- Updated Button for Menu Toggle -->
             <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleMenu()">
                 <span class="hamburger"></span>
             </button>
@@ -181,9 +182,9 @@
                 const nav = document.querySelector('.nav');
                 const toggleButton = document.querySelector('.nav-toggle');
                 const isExpanded = toggleButton.getAttribute('aria-expanded') === 'true';
-                
-                toggleButton.setAttribute('aria-expanded', !isExpanded);
-                nav.classList.toggle('nav--open', !isExpanded);
+
+                toggleButton.setAttribute('aria-expanded', !isExpanded);  // toggle the aria-expanded attribute
+                nav.classList.toggle('nav--open', !isExpanded);            // toggle the nav menu visibility
             }
 
             // Back to Top Button Function
